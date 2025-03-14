@@ -8,7 +8,7 @@ import { DefaultEditor } from './default-editor';
   template: `
     <input [ngClass]="inputClass"
            type="checkbox"
-           class="form-control"
+           class="form-check"
            [name]="cell.getId()"
            [disabled]="!cell.isEditable()"
            [checked]="cell.getValue() == (cell.getColumn().getConfig()?.true || true)"
